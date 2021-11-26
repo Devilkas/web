@@ -28,48 +28,58 @@
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-md-3 text-center">
+            <div class="col-md-3 text-center mt-2">
                 <p class="el">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nostrum odit beatae modi sunt
                     sapiente praesentium blanditiis illum fugit, dolore, hic non, libero aspernatur alias numquam ea
                     quod eos. Iste.
                 </p>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 mt-5">
                 <h2 class="text-center">Пріорітетність css</h2>
                 <ol>
+                    <li>!important</li>
                     <li>Inline стилі</li>
                     <li>ID</li>
                     <li>Class (виконується код найнижчіх рядків)</li>
                     <li>Tag</li>
                 </ol>
             </div>
-            <div class="col-md-3 text-center btns"></div>
-            <div class="col-md-3 text-center">
-                <form id="message-form">
+            <div class="col-md-3 text-center btns mt-2"></div>
+            <div class="col-md-3 mt-2">
+                <form id="message-form" class="form">
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" value="mail@asda.as">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <!-- <label for="email" class="form-label">Email</label> -->
+                        <input type="email" class="form-control _req" id="email" name="email"
+                            aria-describedby="emailHelp" value="" placeholder="Email">
                     </div>
                     <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" name="name" class="form-control" id="name" value="My Name">
-                    </div>       
-                    <div class="mb-3">
-                        <label for="city" class="form-label">City</label>
-                        <input type="text" name="city" class="form-control" id="city" value="My City">
-                    </div>        
-                    <div class="mb-3">
-                        <label for="description" class="form-label">Description</label>
-                        <input type="text" name="description" class="form-control" id="description" value="description">
+                        <!-- <label for="name" class="form-label">Name</label> -->
+                        <input type="text" name="name" class="form-control _req" id="name" value="" placeholder="Name">
                     </div>
                     <div class="mb-3">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="message" name="message"
-                            style="height: 100px">ansfhf</textarea>
-                        <label for="message" class="form-label">Message</label>
+                        <!-- <label for="city" class="form-label">City</label> -->
+                        <input type="text" name="city" class="form-control _req" id="city" value="" placeholder="City">
                     </div>
-                    <button type="submit" class="btn btn-primary">Send</button>
+                    <div class="mb-3">
+                        <!-- <label for="description" class="form-label">Description</label> -->
+                        <input type="text" name="description" class="form-control _req" id="description" value=""
+                            placeholder="Description">
+                    </div>
+                    <div class="mb-3">
+                        <!-- <label for="message" class="form-label">Message</label> -->
+                        <textarea class="form-control _req" placeholder="Leave a message here" id="message"
+                            name="message" style="height: 100px"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <!-- <label for="description" class="form-label">Description</label> -->
+                        <input type="file" name="image" class="form-control _req" id="imgFile"
+                            accept=".png, .gif, .jpeg">
+                        <div id="imgPreview"></div>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -78,7 +88,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="js/scripts.js"></script>
 
 </html>
